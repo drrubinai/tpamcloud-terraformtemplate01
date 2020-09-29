@@ -17,7 +17,7 @@ resource "aws_security_group" "sg-023ac37b" {
             to_port          = 0
         },
     ]
-     id           = "sg-023ac37b"
+
      ingress      = [
         {
             cidr_blocks      = [
