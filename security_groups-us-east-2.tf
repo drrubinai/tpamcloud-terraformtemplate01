@@ -37,9 +37,9 @@ resource "aws_security_group" "sg-023ac37b" {
             cidr_blocks      = [
                 "95.26.9.211/32",
                 "95.26.70.0/24",
-                "89.223.214.65/27",
-                "89.223.214.97/28",
-                "79.134.76.57/30",
+                "89.223.214.64/27",
+                "89.223.214.96/28",
+                "79.134.76.56/30",
             ]
             description      = ""
             from_port        = 0
@@ -52,7 +52,6 @@ resource "aws_security_group" "sg-023ac37b" {
         },
     ]
      name         = "default"
-     owner_id     = "537276924562"
      tags         = {}
      vpc_id       = "vpc-8fc83ee6"
 
