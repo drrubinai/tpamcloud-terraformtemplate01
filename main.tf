@@ -21,27 +21,6 @@ provider "aws" {
   region = "us-east-2"
 }
 
-# ---------------------------------------------------------------------------------------------------------------------
-# DEPLOY A SINGLE EC2 INSTANCE
-# ---------------------------------------------------------------------------------------------------------------------
-
-resource "aws_instance" "example" {
-  # Ubuntu Server 18.04 LTS (HVM), SSD Volume Type in us-east-2
-  ami                    = "ami-0c55b159cbfafe1f0"
-  instance_type          = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.sg-023ac37b.id]
-
-  user_data = <<-EOF
-              #!/bin/bash
-              echo "Hello, World" > index.html
-              nohup busybox httpd -f -p "${var.server_port}" &
-              EOF
-
-  tags = {
-    Name = "terraform-example-for-epam"
-  }
-  availability_zone = "us-east-1b"
-}
 
 
 

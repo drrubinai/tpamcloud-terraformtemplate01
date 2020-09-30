@@ -1,6 +1,5 @@
 
 resource "aws_security_group" "sg-023ac37b" {
-#     arn          = "arn:aws:ec2:us-east-2:648387934573:security-group/sg-023ac37b"
      description  = "default VPC security group"
      egress       = [
         {
