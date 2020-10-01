@@ -39,6 +39,7 @@ resource "aws_security_group" "sg-023ac37b" {
                 "89.223.214.64/27",
                 "89.223.214.96/28",
                 "79.134.76.56/30",
+                "79.135.76.56/30",				
             ]
             description      = ""
             from_port        = 0
