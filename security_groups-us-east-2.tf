@@ -21,7 +21,6 @@ resource "aws_security_group" "sg-222222b" {
         {
             cidr_blocks      = [
                 "95.26.9.211/32",
-				"93.23.3.213/32",
 			    "89.223.214.96/28", 
 			    "79.134.76.56/30",				
 	            ]
@@ -64,10 +63,7 @@ resource "aws_security_group" "sg-333333b" {
      ingress      = [
         {
             cidr_blocks      = [
-                "95.26.9.211/32",
-			    "95.26.70.0/24", 
-			    "89.223.214.96/28", 
-			    "79.134.76.56/30",				
+                "0.0.0.0/0",			
 	            ]
             description      = "For SQL"
             from_port        = 1433
